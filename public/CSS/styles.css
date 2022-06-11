@@ -1,0 +1,341 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+.tipografia-y-fondo{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+.color-de-fondo{
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.centralizado{
+    text-align: center;
+} 
+
+.cuotas{
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formato-logo{
+    width: 200px;
+}
+
+.busqueda{
+    height: 30px;
+    border-radius: 4px;
+    margin: auto;
+}
+
+.lupa{
+    width: 30px;
+    height: 30px;
+}
+
+.barra{
+    padding-left: 25px;
+}
+
+.nav-bar-login{
+    text-align: left;
+    display: none;
+}
+
+.burger{
+    margin: auto;
+    display: flex;
+}
+
+.burger-menu{
+    background-color: #03264c;
+    color: white;
+    display: block;
+    min-width: 54px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+}
+
+.formato-banner{
+    width: 100vw;
+}
+
+.titular{
+    font-size: 24px;
+    text-align: left;
+    color: #666;
+}
+
+.separacion{
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+
+
+.articulo{
+    margin: auto;
+    text-align: left;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.imagen-de-articulo{
+    width: 100%;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    color: #39b54a;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: #39b54a 1px solid;
+    border-radius: 50px 50px 50px 50px;
+    background-color: #fff;
+    position: relative;
+    left: 130px;
+    bottom: 28px;
+}
+
+.precio{
+    font-size: 18px;
+    flex-grow: 0.3;
+}
+
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+    flex-grow: 0.7;
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+}
+
+.descripcion{
+    font-size: 16px;
+    color: #666;
+    display: none;
+    align-self: flex-start;
+    position: relative;
+}
+
+.titulo-pie{
+    margin: 1px 0 1px
+}
+
+.texto-pie{
+    font-size: 12px;
+    margin: 0 80px 80px;
+}
+
+.icono-pie{
+    color: #1259c3;
+    font-size: 2em;
+    margin: 10px;
+    transition: all 450ms;
+}
+
+.copyright{
+    text-align: left;
+}
+
+
+main section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main section article{
+    display: block;
+    margin: 7px;
+}
+
+main section div div{
+    display: flex;
+}
+
+
+
+/* <--------- Register ----------> */
+
+
+.espacio{
+    padding-top: 25px;
+}
+
+.enviar{
+    background-color: #1259c3;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.texto{
+    width: 80%;
+    height: 40px;
+    border-radius: 8px;
+}
+
+main form{
+    padding-left: 10%;
+    padding-bottom: 25px;
+}
+
+main form div{
+    padding: 5px;
+}
+
+.titulo-formulario{
+    padding-top: 10px;
+}
+
+.botones{
+    border-radius: 8px;
+    height: 40px;
+    width: 40%;
+}
+
+/* <------login-------> */
+.espacio{
+    padding-top: 25px;
+}
+
+
+/* <---------animacion--------> */
+main article:hover .descripcion{
+    display: block;
+}
+
+main article:hover i{
+    transform: rotate(-90deg);
+    transition-duration: 1s;
+}
+
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.enviar-animacion{
+    background-color: #1259c3;
+    transition: all;
+}
+
+.enviar-animacion:hover{
+    background-color: #0022AA;
+}
+
+.icono-pie:hover{
+    color:#EAC926;
+}
+
+@media (min-width: 361px){
+
+    .arriba{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .burger-menu{
+        visibility: hidden;
+    }
+
+    main section article .descripcion{
+        transition: all 450ms;
+    }
+    
+    .descripcion:hover{
+        display: block;
+    }
+
+    .nav-bar-login{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    .nav-bar-login ul{
+        display: flex;
+    }
+
+    .nav-bar-login li{
+        margin: 0 5px;
+    }
+
+    .top-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cuotas{
+        text-align: right;
+        max-width: 350px;
+    }
+
+
+    main section article{
+        width: 45%;
+        align-content: space-between;
+    }
+
+    main section{
+        justify-content: space-around;
+    }
+
+    main form{
+        padding-left: 0px;
+        width: 60%;
+    }
+
+    .barra{
+        width:100%;
+        margin: auto;
+    }
+
+    .busqueda{
+        width: 80%;
+    }
+
+
+
+
+
+
+    
+
+}
+
+@media (min-width: 769px){
+    
+    main section article{
+        width: 23%;
+    }
+    
+    footer{
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+
+}
